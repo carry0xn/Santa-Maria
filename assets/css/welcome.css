@@ -8,29 +8,39 @@ body{
 .welcome{
     margin: 0;
     padding: 0;
+    
     background-image: url("../img/fondo2.png");
     background-size: cover;
     background-position: center; 
-    text-align: center;
+    
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
+
     justify-content: center;
+    align-items: center;
 }
 
 .welcome h1 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
+    
     color: #000;
-    text-shadow: 6px 6px 10px rgb(255, 255, 255); 
+    text-shadow: 2px 2px #00d9ff;
+
+    max-width: fit-content;
+    border-radius: 5px; /* Radio de los bordes del rectángulo */
+    display: inline-block; 
 }
 
 .welcome p {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 30px;
+    
     color: #000;
-    text-shadow: 6px 6px 10px rgb(255, 255, 255); 
+    border: 2px solid #00d9ff; /* Borde del rectángulo */
+    background-color: #00d9ff;
 }
 
 /* NIVELES DE INGLES*/
@@ -43,11 +53,11 @@ body{
     display: flex;
     justify-content: center;
 }
-.separate_levels > h1 {
+.separate_levels h1 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
     color: #000;
-    text-shadow: 6px 6px 10px rgba(0, 0, 0, 1); 
+    text-shadow: 2px 2px #fff;
 }
 
 .imagenes_levels {
@@ -56,8 +66,8 @@ body{
     justify-content: center; 
 }
 .box {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     transition: 0.5s;
     margin: 20px;
   }
@@ -113,7 +123,7 @@ button {
   cursor: pointer;
   position: relative;
   padding: 10px 20px;
-  background: white;
+  background: #fff;
   font-size: 28px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -178,14 +188,13 @@ button:hover::after {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 50px;
   color: #000;
-  text-shadow: 6px 6px 10px rgba(0, 0, 0, 1); 
+  text-shadow: 2px 2px #fff;
 }
 
 .libros h2{
   font-family: 'Courier New', Courier, monospace;
   font-size: 30px;
   color: #000;
-  text-shadow: 6px 6px 10px rgba(0, 0, 0, 1); 
 }
 
 /*FOOTER*/
@@ -193,8 +202,11 @@ footer {
   display: block;
   text-align: center;
   padding: 20px;
-  background-color: #333;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+}
+footer p{
+  font-size: 25px;
 }
 .maps {
   margin-top: 10px;
@@ -223,7 +235,7 @@ footer {
   height: 50px;
   text-align: center;
   line-height: 50px; 
-  background: #333;
+  background: #fff;
   border-radius: 50%;
   font-size: 30px; 
   color: #000;
@@ -238,7 +250,7 @@ footer {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #ffee10;
+  background: #00d9ff;
   transition: .5s;
   transform: scale(.9);
   z-index: -1;
@@ -246,9 +258,9 @@ footer {
 
 .social_media ul li a:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #ffee10;
+  box-shadow: 0 0 25px #00d9ff;
 }
 
 .social_media ul li a:hover {
-  box-shadow: 0 0 5px #ffee10;
+  box-shadow: 0 0 15px #00d9ff;
 }
